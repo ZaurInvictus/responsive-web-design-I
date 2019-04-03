@@ -289,19 +289,17 @@ TOP CONTENT */
 
 .services {
 	width: 32%;
-	margin-left: 0 10px;
+	margin-left: 0;
 }
 
 .product {
-
 	width: 32%;
-	margin-left: 0 10px;
+	margin-left: 0;
 }
 
 .vision {
-
 	width: 32%;
-	margin-left: 0 10px;
+	margin-left: 0;
 }
 
 
@@ -442,7 +440,19 @@ MOBILE VIEW 500 PX*/
 	}
 
 	.middle-img-tag {
-    width: 82%;
+    width: 83%;
+	}
+
+	.services {
+		margin-left: 0;
+	}
+	
+	.product {
+		margin-left: 0;
+	}
+	
+	.vision {
+		margin-left: 0;
 	}
 
 }
