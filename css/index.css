@@ -365,27 +365,28 @@ MOBILE VIEW 500 PX*/
 
 @media (max-width: 500px) {
 
-
-header img{
-	padding-top: 220px;
+.logo {
+	padding-top: 230px;
 }
 
 	nav {
 	 flex-direction: column;
 	 line-height: 30px;
 	 font-size: 20px;
-   margin-top: 125px;
+   margin-top: 150px;
 	}
 
-	nav hr {
-    display: initial;
-		width: 90%;
-		border: 0.5px solid rgba(0, 0, 0, 0.3);
-		align: left;
-	}
+nav a {
+	display: flex;
+	justify-content: center;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.6);
+	border-bottom:  0.5px solid rgba(0, 0, 0, 0.6);
+	width: 95%;
+  padding: 15px;
+}
 
 	.intro {
-		margin-top: 290px;
+		margin-top: 340px;
 	}
 
 	.top-content {
