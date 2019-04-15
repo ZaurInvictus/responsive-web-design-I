@@ -1,3 +1,413 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+
+
+/* Your code starts here! */
+
+/* ///////////////////////////////////////////////
+// MY CODE */
+
+.container {
+	width: 1000px;
+	/* height: 1450px; */
+	margin: 0 auto;
+	border: 1px solid rgba(119, 136, 153, 0.5);
+}
+
+
+/* ///////////////////////////////////////////////
+// HEADER*/
+
+header {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+header img { margin-right: 22px; }
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	margin: 20px;
+	/* position: fixed; 
+	background-image: linear-gradient(to right, rgb(98, 179, 216), rgb(149, 212, 241)); 
+	box-shadow: rgba(101, 170, 200, 0.2) 0px 6px 8px;  
+	z-index: 1;  */
+} 
+
+nav a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.intro {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 500px;
+}
+
+.intro-text {
+	text-align: center;
+	font-size: 77px;
+	margin-left: 140px;
+	margin-top: 35px;
+}
+
+
+.btn {
+	vertical-align: top;
+	width: 170px;
+	height: 35px;
+	font-size: 16px;
+	color: black;
+	background-color: white;
+	border: 0.5px solid black;
+	border-radius: 5px;
+	box-shadow: rgba(101, 170, 200, 0.2) 0px 6px 8px;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	transition: ease-out 0.5s;
+	background-image: linear-gradient(to right, rgb(98, 179, 216), rgb(149, 212, 241));
+	color: #fff;
+}
+
+
+hr {
+	width: 90%;
+	border: 1px solid black;
+	align: left;
+}
+
+nav hr {display: none;}
+
+
+/* ///////////////////////////////////////////////
+TOP CONTENT */
+
+.top-content {
+	display: flex;
+	text-align: left;
+	margin: 15px 30px;
+	padding: 10px;
+	line-height: 20px;
+}
+
+.box {
+	width: 47%;
+	margin: 10px;
+}
+
+
+.middle-img-tag {
+	margin-left: 50px;
+	width: 880px;
+	margin-bottom: 30px;
+}
+
+/* //////////////////////////////////////////////// */
+/* BOTTOM CONTENT */
+
+.bottom-content {
+	display: flex;
+	text-align: left;
+	margin: 50px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	line-height: 20px;
+}
+
+
+.services {
+	width: 32%;
+	margin-left: 0;
+}
+
+.product {
+	width: 32%;
+	margin-left: 0;
+}
+
+.vision {
+	width: 32%;
+	margin-left: 0;
+}
+
+
+
+/* //////////////////////////////////////
+CONTACT & FOOTER */
+
+.contact {
+	width: 170px;
+	line-height: 25px;
+	margin: 15px 50px;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	margin: 50px;
+}
+
+
+/*//////////////////////////////////////////////////////////////
+ RESPONSIVE
+ max-width media queries 800px and 500px
+//////////////////////////////////////////////////////////////*/
+
+/* TABLET VIEW 800 PX*/
+@media (max-width: 800px) {
+  .container {
+		width: 100%;
+	}
+
+	header {
+		flex-direction: column;
+	}
+
+	header img {
+		padding-top: 70px;
+		margin: 15px;
+	}
+
+	nav { 
+		order: 1;
+		margin-bottom: 50px;
+	}
+
+	.intro-text {
+		margin: 0;
+	}
+	
+	.intro {
+		height: 450px;
+	}
+
+	.intro img {
+		display: none;
+	}
+
+	.middle-img-tag {
+		width: 90%;
+	}
+	
+}
+
+/* /////////////////////////////////////////////////////
+MOBILE VIEW 500 PX*/
+
+@media (max-width: 500px) {
+
+.logo {
+	padding-top: 230px;
+}
+
+	nav {
+	 flex-direction: column;
+	 line-height: 30px;
+	 font-size: 20px;
+   margin-top: 150px;
+	}
+
+nav a {
+	display: flex;
+	justify-content: center;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.6);
+	border-bottom:  0.5px solid rgba(0, 0, 0, 0.6);
+	width: 95%;
+  padding: 15px;
+}
+
+	.intro {
+		margin-top: 340px;
+	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.box {
+		width: 100%;
+	}
+
+	.box p {
+		word-break: break-all;
+	}
+
+	.middle-img-tag {
+    width: 83%;
+	}
+
+}
 
